@@ -1,0 +1,1136 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Reconstruyendo la Familia en Jesús | Presentación de Diseño</title>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error": "#ffffff",
+                    "on-surface": "#1b1c1c",
+                    "tertiary-fixed-dim": "#c8c6c2",
+                    "tertiary": "#31312e",
+                    "primary-fixed": "#baeafe",
+                    "on-primary-fixed": "#001f29",
+                    "on-surface-variant": "#41484b",
+                    "surface-container-high": "#eae7e7",
+                    "on-tertiary-fixed": "#1b1c19",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#e4e2dd",
+                    "secondary-fixed-dim": "#ffb596",
+                    "on-secondary-container": "#783615",
+                    "on-primary-fixed-variant": "#1a4c5d",
+                    "on-secondary-fixed": "#360f00",
+                    "primary-fixed-dim": "#9fcde2",
+                    "surface-container": "#f0eded",
+                    "primary-container": "#1b4d5e",
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#366476",
+                    "outline-variant": "#c0c8cc",
+                    "outline": "#71787c",
+                    "on-tertiary-fixed-variant": "#474744",
+                    "background": "#fcf9f8",
+                    "surface-bright": "#fcf9f8",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "primary": "#003645",
+                    "inverse-primary": "#9fcde2",
+                    "inverse-surface": "#303030",
+                    "secondary-fixed": "#ffdbcd",
+                    "on-secondary-fixed-variant": "#753413",
+                    "surface-variant": "#e4e2e1",
+                    "surface": "#fcf9f8",
+                    "on-tertiary-container": "#b7b6b2",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#8ebdd1",
+                    "secondary-container": "#ffa278",
+                    "inverse-on-surface": "#f3f0f0",
+                    "surface-dim": "#dcd9d9",
+                    "on-background": "#1b1c1c",
+                    "surface-container-low": "#f6f3f2",
+                    "secondary": "#924a28",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#484844",
+                    "surface-container-highest": "#e4e2e1"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1140px",
+                    "section-gap": "128px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "gutter": "32px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Playfair Display"],
+                    "display-lg-mobile": ["Playfair Display"],
+                    "body-lg": ["Inter"],
+                    "headline-xl-mobile": ["Playfair Display"],
+                    "body-md": ["Inter"],
+                    "label-caps": ["Inter"],
+                    "quote": ["Playfair Display"],
+                    "headline-xl": ["Playfair Display"],
+                    "display-lg": ["Playfair Display"]
+            },
+            "fontSize": {
+                    "headline-md": ["32px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "body-lg": ["20px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "label-caps": ["12px", {"lineHeight": "1.5", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                    "quote": ["28px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-xl": ["48px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .ghost-border {
+                @apply border border-primary/20;
+            }
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-surface sticky full-width top-0 z-50 border-b border-outline-variant opacity-95">
+<nav class="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6">
+<div id="header-title" class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim tracking-tight">
+                Presentación de Diseño Editorial
+            </div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#about">Sinopsis</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#propuesta">Propuesta Visual</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-all duration-300 scale-95 active:scale-90 transition-transform" href="#vistas">Maquetación</a>
+
+<!-- Auth & Admin Menu Item -->
+<div class="flex items-center gap-3 border-l border-primary/20 pl-6 ml-2">
+  <!-- Google Login Trigger (discreet gear icon) -->
+  <button id="auth-login-btn" onclick="openLoginModal()" title="Acceso Editor" class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center p-1">
+    <span class="material-symbols-outlined text-2xl">settings</span>
+  </button>
+  
+  <!-- Active Editor Controls -->
+  <div id="auth-editor-group" class="hidden flex items-center gap-3">
+    <img id="auth-editor-pic" class="w-7 h-7 rounded-full border border-primary/20 bg-surface-container" src="" alt="Editor Profile">
+    <button onclick="toggleAdminPanel()" title="Editar Contenido" class="text-primary hover:text-secondary transition-colors flex items-center justify-center p-1">
+      <span class="material-symbols-outlined text-2xl">construction</span>
+    </button>
+    <button onclick="logoutEditor()" title="Cerrar Sesión" class="text-on-surface-variant hover:text-red-600 transition-colors flex items-center justify-center p-1">
+      <span class="material-symbols-outlined text-xl">logout</span>
+    </button>
+  </div>
+</div>
+</div>
+<div class="md:hidden">
+<button aria-label="Menu" class="text-primary hover:text-secondary transition-colors">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-center min-h-[80vh]">
+<div class="md:col-span-5 order-2 md:order-1 flex justify-center md:justify-end">
+<div class="relative w-full max-w-md aspect-[2/3] p-6 bg-surface-container-lowest ghost-border">
+<img id="hero-cover-img" alt="Book cover for Reconstruyendo la Familia en Jesús by Luisa Mateo" class="w-full h-full object-cover ghost-border" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrgjM3ikjQOZyfXW79FbrLx25ENF4XzjwA63GFhuOfH4Lja7HHQva3bS_fyQUbMgvTdIg_yVa1mIv2GlachL0oDqyTMom1Or7R2FRBM0ZRZ1ECAzgNyrMbJpcuf9lRtHHA-oNwm0mP9sS7YhcNqnb0b2ykXQDWY_wzywrdIpg8NVWmA9u3DmIM4TO_W3hvYGI03sSDKj-L5SNGt6Cz1T_NWO6C4OVafzvIkW3s-uVTE1Ev7KQz4qwrOKWbSbOe7ovfFg">
+</div>
+</div>
+<div class="md:col-span-7 order-1 md:order-2 flex flex-col items-start gap-8">
+<span id="hero-author" class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Luisa Mateo</span>
+<h1 id="hero-title" class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary">
+                    Reconstruyendo la Familia en Jesús
+                </h1>
+<p id="hero-description" class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Presentación del diseño editorial para revisión de la autora. Descubre la propuesta visual, los conceptos fundamentales y la maquetación interior de la obra.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 mt-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-[#D27D56] text-white hover:bg-[#b06745] transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase" href="#vistas">
+                        Ver Portada
+                    </a>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-transparent border-2 border-primary text-primary hover:bg-primary/5 transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase" href="#propuesta">
+                        Detalles Técnicos
+                    </a>
+</div>
+</div>
+</section>
+<!-- Quote Section -->
+<section class="bg-surface-container-low py-section-gap">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+<div class="w-16 h-1 bg-[#D27D56] mx-auto mb-12"></div>
+<blockquote id="quote-text" class="font-quote text-quote text-primary max-w-4xl mx-auto italic">
+                    "La verdadera reconstrucción de un hogar comienza cuando invitamos a la gracia divina a ser el arquitecto de nuestras vidas familiares."
+                </blockquote>
+</div>
+</section>
+<!-- Synopsis Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-section-gap grid grid-cols-1 md:grid-cols-12 gap-gutter items-start" id="about">
+<div class="md:col-span-5 md:sticky top-32">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-6">
+                    Sinopsis del Libro
+                </h2>
+<div class="w-24 h-0.5 bg-[#D27D56] mb-8"></div>
+</div>
+<div class="md:col-span-7 space-y-8 font-body-lg text-body-lg text-on-surface-variant">
+<p id="synopsis-p1" class="">
+                    ¿Se puede reconstruir un hogar cuando los cimientos parecen rotos? En un mundo donde las estructuras familiares enfrentan desafíos sin precedentes, <em>Reconstruyendo la Familia en Jesús</em> emerge como un faro de esperanza y orientación práctica. Luisa Mateo, con profunda sensibilidad y sabiduría pastoral, nos invita a reconsiderar los fundamentos sobre los cuales edificamos nuestros hogares.
+                </p>
+<p id="synopsis-p2" class="">
+                    Este libro no es simplemente un manual de instrucciones, sino una invitación a un retiro espiritual enfocado en la sanación relacional. A través de reflexiones profundas y ejemplos de la vida real, el lector descubrirá herramientas para perdonar, comunicarse y amar de manera más semejante a Cristo.
+                </p>
+</div>
+</section>
+<!-- Rationale Section -->
+<section class="bg-surface-container-low py-section-gap" id="propuesta">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter items-start">
+<div class="md:col-span-5 md:sticky top-32">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-6">
+                    Propuesta Visual de Portada
+                </h2>
+<div class="w-24 h-0.5 bg-[#D27D56] mb-8"></div>
+</div>
+<div class="md:col-span-7 space-y-8 font-body-lg text-body-lg text-on-surface-variant">
+<p id="proposal-title" class="font-headline-md text-primary">Ilustración Conceptual Minimalista / Metáfora Visual</p>
+<div class="space-y-6 mt-8">
+<div class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-[#D27D56] flex-shrink-0"></span>
+<div>
+<strong id="item1-title" class="text-primary font-semibold">Simbolismo:</strong>
+<p id="item1-desc" class="">El diseño utiliza elementos visuales cuidadosamente seleccionados para representar la reconstrucción guiada por la fe, aportando profundidad y significado al primer vistazo.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-[#D27D56] flex-shrink-0"></span>
+<div>
+<strong id="item2-title" class="text-primary font-semibold">Metáfora:</strong>
+<p id="item2-desc" class="">Se establece un lenguaje visual que dialoga directamente con el título, comunicando restauración, solidez y la presencia divina como elemento unificador.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-[#D27D56] flex-shrink-0"></span>
+<div>
+<strong id="item3-title" class="text-primary font-semibold">Equilibrio:</strong>
+<p id="item3-desc" class="">La composición mantiene una estructura armónica y despejada, permitiendo que el mensaje principal respire y destaque la tipografía clásica.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="w-2 h-2 mt-2 bg-[#D27D56] flex-shrink-0"></span>
+<div>
+<strong id="item4-title" class="text-primary font-semibold">Funcionalidad:</strong>
+<p id="item4-desc" class="">Diseño optimizado para destacar tanto en librerías físicas como en miniaturas digitales, asegurando máxima legibilidad y atractivo comercial en cualquier formato.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="bg-surface-container-low py-20" id="flipbook-preview">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center">
+    <h2 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-4">
+      Visualizador de Diagramación (Flipbook)
+    </h2>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-12">
+      Explore la obra completa de forma interactiva a través de este visualizador digital.
+    </p>
+    <div id="flipbook-container" class="relative w-full aspect-video bg-surface-dim rounded-none shadow-lg flex items-center justify-center overflow-hidden mb-8 border border-primary/20">
+      <!-- Empty State -->
+      <div id="flipbook-empty" class="flex flex-col items-center gap-6 p-8">
+        <span class="material-symbols-outlined text-6xl text-primary/30">menu_book</span>
+        <div>
+          <h3 class="font-headline-md text-primary mb-2">Aún no se ha configurado el flipbook</h3>
+          <p class="text-on-surface-variant font-body-md max-w-md">Para configurar la diagramación digital del libro, inicie sesión desde el menú de administración ⚙️.</p>
+        </div>
+        <button onclick="openLoginModal()" class="inline-flex items-center justify-center px-8 py-3 bg-primary text-white hover:bg-primary/90 transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase">
+          Iniciar Sesión
+        </button>
+      </div>
+
+      <!-- Active State -->
+      <iframe id="flipbook-iframe" class="hidden w-full h-full border-0" allowfullscreen="true" scrolling="no" src=""></iframe>
+    </div>
+    <div id="flipbook-actions" class="hidden flex justify-center gap-4">
+      <button onclick="openFlipbookFullscreen()" class="inline-flex items-center justify-center px-8 py-4 bg-[#D27D56] text-white hover:bg-[#b06745] transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase">
+        Abrir en Pantalla Completa
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Floating trigger removed - integrated in TopNavBar -->
+
+<!-- Login Modal -->
+<div id="login-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[110] hidden items-center justify-center p-4">
+  <div class="bg-surface max-w-sm w-full p-8 border border-primary/20 relative rounded-none shadow-2xl text-center">
+    <button onclick="closeLoginModal()" class="absolute top-4 right-4 text-primary hover:text-[#D27D56] transition-colors">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    <span class="material-symbols-outlined text-6xl text-primary/30 mb-4">pin</span>
+    <h3 class="font-headline-md text-primary mb-2">Acceso de Editor</h3>
+    <p class="text-on-surface-variant font-body-md mb-6 text-sm">
+      Ingrese su correo electrónico y el código de 6 dígitos de su aplicación Google Authenticator.
+    </p>
+    
+    <div class="space-y-4 mb-6 text-left">
+      <div>
+        <label class="block text-[10px] font-semibold text-primary uppercase mb-1" for="totp-email-input">Correo Electrónico</label>
+        <input type="email" id="totp-email-input" oninput="updateQrCode()" class="w-full bg-surface-container-low border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none" placeholder="ejemplo@correo.com">
+      </div>
+      <div>
+        <label class="block text-[10px] font-semibold text-primary uppercase mb-1" for="totp-code-input">Código de Seguridad</label>
+        <input type="text" id="totp-code-input" maxlength="6" class="w-full bg-surface-container-low border border-primary/20 p-3 text-center text-xl font-mono tracking-[0.3em] outline-none focus:border-primary rounded-none" placeholder="000000">
+      </div>
+    </div>
+    
+    <button onclick="verifyAndLogin()" class="w-full py-3 bg-[#D27D56] text-white hover:bg-[#b06745] transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase mb-6">
+      Verificar Código
+    </button>
+    
+    <!-- QR Setup Section -->
+    <div class="border-t border-primary/10 pt-4 text-left">
+      <details class="group cursor-pointer" ontoggle="if(this.open) updateQrCode()">
+        <summary class="text-xs text-primary/60 hover:text-primary font-label-caps uppercase select-none">Registrar Dispositivo (Código QR)</summary>
+        <div class="mt-4 flex flex-col items-center gap-4 text-center">
+          <p class="text-xs text-on-surface-variant font-body-md">
+            Escanee este código con Google Authenticator para sincronizar su cuenta.
+          </p>
+          <div class="bg-white p-2 border border-primary/10">
+            <img id="totp-qr-img" class="w-48 h-48" src="" alt="Google Authenticator QR">
+          </div>
+        </div>
+      </details>
+    </div>
+  </div>
+</div>
+
+<!-- Admin Panel Drawer -->
+<div id="admin-drawer" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[110] hidden justify-end">
+  <div class="bg-surface max-w-xl w-full h-full border-l border-primary/20 flex flex-col shadow-2xl relative">
+    
+    <!-- Drawer Header -->
+    <div class="p-6 border-b border-primary/10 flex justify-between items-center bg-surface-container-low">
+      <div class="text-left">
+        <h3 class="font-headline-md text-primary">Panel de Administración</h3>
+        <p class="text-on-surface-variant text-sm font-body-md">Configure las imágenes y textos de la presentación</p>
+      </div>
+      <button onclick="toggleAdminPanel()" class="text-primary hover:text-[#D27D56] transition-colors">
+        <span class="material-symbols-outlined text-3xl">close</span>
+      </button>
+    </div>
+
+    <!-- Drawer Content (Scrollable) -->
+    <div class="flex-1 overflow-y-auto p-6 space-y-8 text-left font-body-md">
+      
+      <!-- Section: Access Control Settings -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Control de Acceso (Autenticación)</h4>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Clave Secreta TOTP (Base32 - 16 caracteres)</label>
+          <div class="flex">
+            <input type="password" id="input-drawer-totpSecret" class="flex-1 bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none font-mono" placeholder="Ingresar clave secreta Base32">
+            <button type="button" onclick="togglePasswordVisibility('input-drawer-totpSecret')" class="px-3 border-y border-r border-primary/20 bg-surface-container-low text-primary text-xs uppercase rounded-none hover:bg-primary/5">Ver</button>
+          </div>
+        </div>
+        
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-2">Correos Electrónicos Autorizados</label>
+          <div id="authorized-emails-list" class="space-y-2 mb-3 bg-surface-container-lowest p-4 border border-primary/10 max-h-40 overflow-y-auto">
+            <!-- Populated dynamically via JS -->
+          </div>
+          <div class="flex gap-2">
+            <input type="email" id="input-new-email" class="flex-1 bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none" placeholder="nuevo@correo.com">
+            <button type="button" onclick="addEmailFromDrawer()" class="px-4 py-2 bg-primary text-white font-label-caps text-xs tracking-wider uppercase rounded-none hover:bg-primary/95">Agregar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Hero & Header -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Cabecera y Hero</h4>
+        
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Título de la Cabecera</label>
+          <input type="text" id="input-headerTitle" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+        </div>
+        
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Autor</label>
+          <input type="text" id="input-heroAuthor" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Título del Libro</label>
+          <input type="text" id="input-heroTitle" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Descripción del Hero</label>
+          <textarea id="input-heroDescription" rows="3" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary resize-none rounded-none"></textarea>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Imagen de Portada Principal</label>
+          <input type="text" id="input-heroCoverImg" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-2" placeholder="URL de la imagen">
+          <input type="file" onchange="handleImageUpload(event, 'input-heroCoverImg')" class="w-full text-xs file:mr-4 file:py-2 file:px-4 file:border-0 file:text-xs file:font-semibold file:bg-primary file:text-white hover:file:bg-primary/90">
+        </div>
+      </div>
+
+      <!-- Section: Quote -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Cita Destacada</h4>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Texto de la Cita</label>
+          <textarea id="input-quoteText" rows="3" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary resize-none rounded-none"></textarea>
+        </div>
+      </div>
+
+      <!-- Section: Synopsis -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Sinopsis</h4>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Párrafo 1</label>
+          <textarea id="input-synopsisP1" rows="4" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary resize-none rounded-none"></textarea>
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Párrafo 2</label>
+          <textarea id="input-synopsisP2" rows="4" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary resize-none rounded-none"></textarea>
+        </div>
+      </div>
+
+      <!-- Section: Flipbook Link -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Flipbook Interactivo</h4>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Enlace o Código Iframe del Flipbook</label>
+          <textarea id="input-drawer-flipbookUrl" rows="3" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary resize-none rounded-none" placeholder="https://heyzine.com/... o <iframe src='...'></iframe>"></textarea>
+        </div>
+      </div>
+
+      <!-- Section: Visual Proposal -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Propuesta Visual</h4>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Título de la Propuesta</label>
+          <input type="text" id="input-proposalTitle" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 1: Título</label>
+            <input type="text" id="input-item1Title" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 1: Descripción</label>
+            <input type="text" id="input-item1Desc" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 2: Título</label>
+            <input type="text" id="input-item2Title" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 2: Descripción</label>
+            <input type="text" id="input-item2Desc" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 3: Título</label>
+            <input type="text" id="input-item3Title" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 3: Descripción</label>
+            <input type="text" id="input-item3Desc" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 4: Título</label>
+            <input type="text" id="input-item4Title" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-primary uppercase mb-1">Punto 4: Descripción</label>
+            <input type="text" id="input-item4Desc" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Gallery Mockups -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Galería de Vistas</h4>
+        
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Mockup 1 (Portada)</label>
+          <input type="text" id="input-mockupImg1" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-1">
+          <input type="file" onchange="handleImageUpload(event, 'input-mockupImg1')" class="w-full text-xs">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Mockup 2 (Interior Abierto)</label>
+          <input type="text" id="input-mockupImg2" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-1">
+          <input type="file" onchange="handleImageUpload(event, 'input-mockupImg2')" class="w-full text-xs">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Mockup 3 (Páginas Interiores)</label>
+          <input type="text" id="input-mockupImg3" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-1">
+          <input type="file" onchange="handleImageUpload(event, 'input-mockupImg3')" class="w-full text-xs">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Mockup 4 (Lectura)</label>
+          <input type="text" id="input-mockupImg4" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-1">
+          <input type="file" onchange="handleImageUpload(event, 'input-mockupImg4')" class="w-full text-xs">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Mockup 5 (Inicio de Capítulo)</label>
+          <input type="text" id="input-mockupImg5" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-1">
+          <input type="file" onchange="handleImageUpload(event, 'input-mockupImg5')" class="w-full text-xs">
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Mockup 6 (Apilados)</label>
+          <input type="text" id="input-mockupImg6" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none mb-1">
+          <input type="file" onchange="handleImageUpload(event, 'input-mockupImg6')" class="w-full text-xs">
+        </div>
+      </div>
+
+      <!-- Section: Footer Title -->
+      <div class="space-y-4">
+        <h4 class="font-label-caps text-secondary border-b border-primary/10 pb-2 uppercase tracking-wider">Pie de Página</h4>
+        <div>
+          <label class="block text-xs font-semibold text-primary uppercase mb-1">Texto del Footer</label>
+          <input type="text" id="input-footerTitle" class="w-full bg-surface-container-lowest border border-primary/20 p-2 text-sm outline-none focus:border-primary rounded-none">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-6 border-t border-primary/10 bg-surface-container-low flex flex-col gap-3">
+      <div class="flex gap-3">
+        <button onclick="saveAdminData()" class="flex-1 py-3 bg-[#D27D56] text-white hover:bg-[#b06745] transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase">
+          Guardar Cambios
+        </button>
+        <button onclick="toggleAdminPanel()" class="px-6 py-3 bg-transparent border border-primary text-primary hover:bg-primary/5 transition-colors rounded-none font-label-caps text-label-caps tracking-widest uppercase">
+          Cerrar
+        </button>
+      </div>
+      <div class="flex flex-col gap-2">
+        <button onclick="downloadHTML()" class="w-full py-2 text-xs bg-primary text-white hover:bg-primary/90 transition-colors rounded-none font-label-caps tracking-wider uppercase">
+          Descargar HTML Final Modificado
+        </button>
+        <button onclick="resetDefaults()" class="w-full py-2 text-xs bg-transparent border border-red-600 text-red-600 hover:bg-red-50 transition-colors rounded-none font-label-caps tracking-wider uppercase">
+          Restablecer Valores de Fábrica
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  const defaultPageData = {
+    totpSecret: "MGMSECRETKEY2345",
+    authorizedEmails: ["mgregoriomartinez@gmail.com"],
+    flipbookUrlRaw: "",
+    flipbookUrl: "",
+    headerTitle: "Presentación de Diseño Editorial",
+    heroCoverImg: "https://lh3.googleusercontent.com/aida-public/AB6AXuCrgjM3ikjQOZyfXW79FbrLx25ENF4XzjwA63GFhuOfH4Lja7HHQva3bS_fyQUbMgvTdIg_yVa1mIv2GlachL0oDqyTMom1Or7R2FRBM0ZRZ1ECAzgNyrMbJpcuf9lRtHHA-oNwm0mP9sS7YhcNqnb0b2ykXQDWY_wzywrdIpg8NVWmA9u3DmIM4TO_W3hvYGI03sSDKj-L5SNGt6Cz1T_NWO6C4OVafzvIkW3s-uVTE1Ev7KQz4qwrOKWbSbOe7ovfFg",
+    heroAuthor: "Luisa Mateo",
+    heroTitle: "Reconstruyendo la Familia en Jesús",
+    heroDescription: "Presentación del diseño editorial para revisión de la autora. Descubre la propuesta visual, los conceptos fundamentales y la maquetación interior de la obra.",
+    quoteText: "La verdadera reconstrucción de un hogar comienza cuando invitamos a la gracia divina a ser el arquitecto de nuestras vidas familiares.",
+    synopsisP1: "¿Se puede reconstruir un hogar cuando los cimientos parecen rotos? En un mundo donde las estructuras familiares enfrentan desafíos sin precedentes, Reconstruyendo la Familia en Jesús emerge como un faro de esperanza y orientación práctica. Luisa Mateo, con profunda sensibilidad y sabiduría pastoral, nos invita a reconsiderar los fundamentos sobre los cuales edificamos nuestros hogares.",
+    synopsisP2: "Este libro no es simplemente un manual de instrucciones, sino una invitación a un retiro espiritual enfocado en la sanación relacional. A través de reflexiones profundas y ejemplos de la vida real, el lector descubrirá herramientas para perdonar, comunicarse y amar de manera más semejante a Cristo.",
+    proposalTitle: "Ilustración Conceptual Minimalista / Metáfora Visual",
+    item1Title: "Simbolismo:",
+    item1Desc: "El diseño utiliza elementos visuales cuidadosamente seleccionados para representar la reconstrucción guiada por la fe, aportando profundidad y significado al primer vistazo.",
+    item2Title: "Metáfora:",
+    item2Desc: "Se establece un lenguaje visual que dialoga directamente con el título, comunicando restauración, solidez y la presencia divina como elemento unificador.",
+    item3Title: "Equilibrio:",
+    item3Desc: "La composición mantiene una estructura armónica y despejada, permitiendo que el mensaje principal respire y destaque la tipografía clásica.",
+    item4Title: "Funcionalidad:",
+    item4Desc: "Diseño optimizado para destacar tanto en librerías físicas como en miniaturas digitales, asegurando máxima legibilidad y atractivo comercial en cualquier formato.",
+    mockupImg1: "https://lh3.googleusercontent.com/aida-public/AB6AXuCR453jq6oNJfSmcrnfSJZoQ00XyHyLR-wa_2KUziE_PefFX1BhWxHxcTu3CKY6-sDrGZv8QXA-gk4Vrm7DkFAUo2fxxnUFrQj5qQcjiliCN4TSGhRrM71EaSQoaNl0aImvfq_V6kfEnRf_84dY3t1Zw4SzQjqI1Ki1SUcHSUHopIBHuF6b4gsPwMn7R4eViphrPx3bWqpOXH0Vq3r0-s7ryv3sT7DznsZFVf8REydopR-78TD3REcuMt1j2-xi-jSx8g",
+    mockupImg2: "https://lh3.googleusercontent.com/aida-public/AB6AXuBqB2zq9ndL_OAVtDbpBfMPTV7yFW-EHgLFq6ZS2zeKmNnNqXldqvVyt5BdaG2MLBG_5_gNh1XR40o_lCtLPqbEhq5nTrMB5iCHkYsswQuX2qGcHf99sZLQU4fDoG6ppTU7e4gRz2OLac7Xs0-dbVLe8DSKPLRauKQc42Xm0JSK_m7s1DTCnf7K4-jpBqr2hWkvX8gH_2KazrCxDA5n0VYqDWCaqwHsJCQ03Ctdqjw6_uGfI_M3f5_qV6zwK9j3HV5kbA",
+    mockupImg3: "https://lh3.googleusercontent.com/aida-public/AB6AXuBG8FFTLHEoRLonQCG7Z_swiJ0-gakr62-fqFhFpaHx4JeLCSsDJPqR6NVReGcqiPFjvVLQnJgm0-4WdyNixb-v9NtlNFvDsfa4jL1TR7nFLbUgmWcpMRvLhZ_itUdDNBYCOLL2jraHvKUoLiP3mvlcN49DVvU9bW9Z8_0X5PbBdY-I8fY90RpzROn97C8uV7WPrrnx0uibGl9ZyNX2owY7VdZO2aw4Qm_sqsYVnkOgk-PtW1h6fv48rPMoqewGnDOHwA",
+    mockupImg4: "https://lh3.googleusercontent.com/aida-public/AB6AXuAFs8rj5EDhU552gUHOjV4vpF8JhSQRUF7lxYhTSR7JRfiSuQ6OQUSNGjWfril73LpG23nO0c6kGq44J_lxn4Npm7yP7PsaQUoBy7ocB0NDU_951FgD9pPChK9JCut-ZOdabOeJ3pDh7hfFe5w1MIPO9Pbxbj5XDZe_qf3GwUYAuDTtC8sDq9DeGMJit6WwHc7hMgqLY1rIp3Uo2ZqXAA6YrUDsbIw30rSM6cBqG3ZuJWxr1aYEAeTo6fnHUHot5uCs9g",
+    mockupImg5: "https://lh3.googleusercontent.com/aida-public/AB6AXuBU82NHdbFxpNkO1j72BUFWHj8a8neMYlMh_K4-TGLiUrkcaS97StjP7jepKRVQHu1U8eYc0fLToqz-n-FWsgn8OqcPf1y-6kMjZJfLzhVGTcl1T6-XAVFx5uE0Bu-X6LmCctJIp8CLAH-RvyVOJfigqCBSrhWUe2OYctpuQjEVE4g-BgfZM8cMFjlHr5wyCE5BEx4zit20fC-Krq_qQa2FLAZQ-w96GW5jju-YxMmZiaf0DTKeO6SPAEBRe4IHsBpt_A",
+    mockupImg6: "https://lh3.googleusercontent.com/aida-public/AB6AXuBtDLZbhsCsf5lqbdLkAmQkvQ2k5r0ecMAO88lrMRXDUwtVnyNaxfuDMQr4a--EZYFhRowRxpbFqLzGYUzSIW4CL7a-flopZDeBsDryyTiUC9f4W9I7sUoX9SBTStul6gy5NU7CaP_HV_dMsOlyh0oNojCBG5uLQbEQ3SSHQ41IkgjcC8x7NSLPrbECGEuOj_AcHmIqsZG3mveJm08RHVwbJ9IOv3YeXh4yOjkgPfd5gSYZSij9OxU6tf9n9OXGY99Nug",
+    footerTitle: "Propuesta de Diseño Editorial"
+  };
+
+  function getStoredFlipbookUrl() {
+    const data = getPageData();
+    return localStorage.getItem('flipbook_url') || data.flipbookUrl || '';
+  }
+
+  function parseFlipbookUrl(input) {
+    input = input.trim();
+    if (!input) return '';
+    if (input.startsWith('<iframe')) {
+      const match = input.match(/src=["']([^"']+)["']/);
+      if (match && match[1]) {
+        return match[1];
+      }
+    }
+    return input;
+  }
+
+  function initFlipbook() {
+    const url = getStoredFlipbookUrl();
+    const iframe = document.getElementById('flipbook-iframe');
+    const emptyState = document.getElementById('flipbook-empty');
+    const actions = document.getElementById('flipbook-actions');
+    const container = document.getElementById('flipbook-container');
+
+    if (url) {
+      iframe.src = url;
+      iframe.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+      actions.classList.remove('hidden');
+      container.classList.remove('aspect-video');
+      container.classList.add('h-[650px]');
+    } else {
+      iframe.src = '';
+      iframe.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      actions.classList.add('hidden');
+      container.classList.add('aspect-video');
+      container.classList.remove('h-[650px]');
+    }
+  }
+
+  function openConfigModal() {
+    const modal = document.getElementById('config-modal');
+    const input = document.getElementById('flipbook-url-input');
+    input.value = localStorage.getItem('flipbook_url_raw') || getStoredFlipbookUrl();
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeConfigModal() {
+    const modal = document.getElementById('config-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function saveFlipbookUrl() {
+    const inputVal = document.getElementById('flipbook-url-input').value;
+    const parsedUrl = parseFlipbookUrl(inputVal);
+    
+    localStorage.setItem('flipbook_url_raw', inputVal);
+    localStorage.setItem('flipbook_url', parsedUrl);
+    
+    closeConfigModal();
+    initFlipbook();
+  }
+
+  function openFlipbookFullscreen() {
+    const url = getStoredFlipbookUrl();
+    if (url) {
+      window.open(url, '_blank');
+    }
+  }
+
+  // --- TOTP AUTHENTICATOR SYSTEM (GOOGLE AUTHENTICATOR) ---
+  
+  function getTotpSecret() {
+    const data = getPageData();
+    let secret = localStorage.getItem('totp_secret') || data.totpSecret || 'MGMSECRETKEY2345';
+    // Clear any previous invalid keys
+    if (secret === 'MGM1984SECRETKEY' || secret === 'MGMSECRETKEY23456') {
+      secret = 'MGMSECRETKEY2345';
+      localStorage.setItem('totp_secret', secret);
+    }
+    return secret;
+  }
+
+  function getAuthorizedEmails() {
+    const data = getPageData();
+    const localSaved = localStorage.getItem('authorized_emails');
+    if (localSaved) {
+      try {
+        return JSON.parse(localSaved);
+      } catch(e) {}
+    }
+    return data.authorizedEmails || ["mgregoriomartinez@gmail.com"];
+  }
+
+  function updateQrCode() {
+    const secret = getTotpSecret();
+    const emailInput = document.getElementById('totp-email-input').value.trim();
+    const email = emailInput || 'mgregoriomartinez@gmail.com';
+    const qrImg = document.getElementById('totp-qr-img');
+    // Simplified label format, no spaces
+    const otpAuthUrl = `otpauth://totp/SacredEditorial:${email}?secret=${secret}&issuer=SacredEditorial`;
+    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(otpAuthUrl)}`;
+  }
+
+  async function base32tohex(base32) {
+    const base32chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+    let bits = "";
+    let hex = "";
+    for (let i = 0; i < base32.length; i++) {
+      const val = base32chars.indexOf(base32.charAt(i).toUpperCase());
+      if (val === -1) continue;
+      bits += val.toString(2).padStart(5, '0');
+    }
+    for (let i = 0; i + 4 <= bits.length; i += 4) {
+      const chunk = bits.substr(i, 4);
+      hex += parseInt(chunk, 2).toString(16);
+    }
+    return hex;
+  }
+
+  async function verifyTOTP(userCode, secret) {
+    try {
+      const epoch = Math.round(new Date().getTime() / 1000.0);
+      const currentStep = Math.floor(epoch / 30);
+      
+      // Check window of -1, 0, +1 to account for desynchronization
+      for (let i = -1; i <= 1; i++) {
+        const time = (currentStep + i).toString(16).padStart(16, '0');
+        const keyHex = await base32tohex(secret);
+        if (keyHex.length % 2 !== 0) continue;
+        
+        const keyBytes = new Uint8Array(keyHex.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+        const timeBytes = new Uint8Array(time.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+
+        const cryptoKey = await window.crypto.subtle.importKey(
+          "raw",
+          keyBytes,
+          { name: "HMAC", hash: { name: "SHA-1" } },
+          false,
+          ["sign"]
+        );
+
+        const signature = await window.crypto.subtle.sign("HMAC", cryptoKey, timeBytes);
+        const hmac = new Uint8Array(signature);
+        const offset = hmac[hmac.length - 1] & 0xf;
+        const binary = ((hmac[offset] & 0x7f) << 24) |
+                       ((hmac[offset + 1] & 0xff) << 16) |
+                       ((hmac[offset + 2] & 0xff) << 8) |
+                       (hmac[offset + 3] & 0xff);
+
+        let otp = (binary % 1000000).toString().padStart(6, '0');
+        if (otp === userCode.trim()) {
+          return true;
+        }
+      }
+    } catch (err) {
+      console.error('Error verificando TOTP:', err);
+    }
+    return false;
+  }
+
+  async function verifyAndLogin() {
+    const email = document.getElementById('totp-email-input').value.trim().toLowerCase();
+    const code = document.getElementById('totp-code-input').value;
+    const secret = getTotpSecret();
+    
+    if (!email) {
+      alert('Por favor ingrese su correo electrónico.');
+      return;
+    }
+
+    const authorized = getAuthorizedEmails();
+    if (!authorized.map(e => e.toLowerCase()).includes(email)) {
+      alert('Acceso Denegado: Su correo electrónico no está autorizado.');
+      return;
+    }
+
+    const isValid = await verifyTOTP(code, secret);
+    if (isValid) {
+      sessionStorage.setItem('editor_authenticated', 'true');
+      sessionStorage.setItem('editor_email', email);
+      closeLoginModal();
+      updateAuthState();
+    } else {
+      alert('Código incorrecto o expirado. Por favor, intente de nuevo.');
+    }
+  }
+
+  function updateAuthState() {
+    const isAuthenticated = sessionStorage.getItem('editor_authenticated') === 'true';
+    const loginBtn = document.getElementById('auth-login-btn');
+    const editorGroup = document.getElementById('auth-editor-group');
+    
+    if (isAuthenticated) {
+      loginBtn.classList.add('hidden');
+      editorGroup.classList.remove('hidden');
+      editorGroup.classList.add('flex');
+    } else {
+      loginBtn.classList.remove('hidden');
+      editorGroup.classList.add('hidden');
+      editorGroup.classList.remove('flex');
+    }
+  }
+
+  function logoutEditor() {
+    sessionStorage.clear();
+    updateAuthState();
+    alert('Sesión de editor cerrada.');
+  }
+
+  function openLoginModal() {
+    const modal = document.getElementById('login-modal');
+    document.getElementById('totp-code-input').value = '';
+    document.getElementById('totp-email-input').value = sessionStorage.getItem('editor_email') || '';
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    updateQrCode();
+  }
+
+  function closeLoginModal() {
+    const modal = document.getElementById('login-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  // --- ADMINISTRATION SYSTEM ---
+  
+  function getPageData() {
+    const saved = localStorage.getItem('book_presentation_data');
+    if (saved) {
+      try {
+        return JSON.parse(saved);
+      } catch(e) {
+        return defaultPageData;
+      }
+    }
+    return defaultPageData;
+  }
+
+  function applyPageData() {
+    const data = getPageData();
+    
+    document.getElementById('header-title').innerText = data.headerTitle;
+    document.getElementById('hero-cover-img').src = data.heroCoverImg;
+    document.getElementById('hero-author').innerText = data.heroAuthor;
+    document.getElementById('hero-title').innerText = data.heroTitle;
+    document.getElementById('hero-description').innerText = data.heroDescription;
+    document.getElementById('quote-text').innerText = data.quoteText;
+    document.getElementById('synopsis-p1').innerText = data.synopsisP1;
+    document.getElementById('synopsis-p2').innerText = data.synopsisP2;
+    document.getElementById('proposal-title').innerText = data.proposalTitle;
+    
+    document.getElementById('item1-title').innerText = data.item1Title;
+    document.getElementById('item1-desc').innerText = data.item1Desc;
+    document.getElementById('item2-title').innerText = data.item2Title;
+    document.getElementById('item2-desc').innerText = data.item2Desc;
+    document.getElementById('item3-title').innerText = data.item3Title;
+    document.getElementById('item3-desc').innerText = data.item3Desc;
+    document.getElementById('item4-title').innerText = data.item4Title;
+    document.getElementById('item4-desc').innerText = data.item4Desc;
+    
+    document.getElementById('mockup-img-1').src = data.mockupImg1;
+    document.getElementById('mockup-img-2').src = data.mockupImg2;
+    document.getElementById('mockup-img-3').src = data.mockupImg3;
+    document.getElementById('mockup-img-4').src = data.mockupImg4;
+    document.getElementById('mockup-img-5').src = data.mockupImg5;
+    document.getElementById('mockup-img-6').src = data.mockupImg6;
+    
+    document.getElementById('footer-title').innerText = data.footerTitle;
+  }
+
+  function toggleAdminPanel() {
+    if (sessionStorage.getItem('editor_authenticated') !== 'true') {
+      openLoginModal();
+      return;
+    }
+
+    const drawer = document.getElementById('admin-drawer');
+    if (drawer.classList.contains('hidden')) {
+      populateInputs();
+      drawer.classList.remove('hidden');
+      drawer.classList.add('flex');
+    } else {
+      drawer.classList.add('hidden');
+      drawer.classList.remove('flex');
+    }
+  }
+
+  function populateInputs() {
+    const data = getPageData();
+    
+    document.getElementById('input-drawer-totpSecret').value = getTotpSecret();
+    document.getElementById('input-drawer-flipbookUrl').value = localStorage.getItem('flipbook_url_raw') || getStoredFlipbookUrl();
+    document.getElementById('input-headerTitle').value = data.headerTitle;
+    document.getElementById('input-heroCoverImg').value = data.heroCoverImg;
+    document.getElementById('input-heroAuthor').value = data.heroAuthor;
+    document.getElementById('input-heroTitle').value = data.heroTitle;
+    document.getElementById('input-heroDescription').value = data.heroDescription;
+    document.getElementById('input-quoteText').value = data.quoteText;
+    document.getElementById('input-synopsisP1').value = data.synopsisP1;
+    document.getElementById('input-synopsisP2').value = data.synopsisP2;
+    document.getElementById('input-proposalTitle').value = data.proposalTitle;
+    
+    document.getElementById('input-item1Title').value = data.item1Title;
+    document.getElementById('input-item1Desc').value = data.item1Desc;
+    document.getElementById('input-item2Title').value = data.item2Title;
+    document.getElementById('input-item2Desc').value = data.item2Desc;
+    document.getElementById('input-item3Title').value = data.item3Title;
+    document.getElementById('input-item3Desc').value = data.item3Desc;
+    document.getElementById('input-item4Title').value = data.item4Title;
+    document.getElementById('input-item4Desc').value = data.item4Desc;
+    
+    document.getElementById('input-mockupImg1').value = data.mockupImg1;
+    document.getElementById('input-mockupImg2').value = data.mockupImg2;
+    document.getElementById('input-mockupImg3').value = data.mockupImg3;
+    document.getElementById('input-mockupImg4').value = data.mockupImg4;
+    document.getElementById('input-mockupImg5').value = data.mockupImg5;
+    document.getElementById('input-mockupImg6').value = data.mockupImg6;
+    
+    document.getElementById('input-footerTitle').value = data.footerTitle;
+    
+    renderAuthorizedEmailsList();
+  }
+
+  function togglePasswordVisibility(id) {
+    const input = document.getElementById(id);
+    if (input.type === "password") {
+      input.type = "text";
+    } else {
+      input.type = "password";
+    }
+  }
+
+  function renderAuthorizedEmailsList() {
+    const container = document.getElementById('authorized-emails-list');
+    const emails = getAuthorizedEmails();
+    container.innerHTML = '';
+    
+    emails.forEach(email => {
+      const isOwner = email.toLowerCase() === 'mgregoriomartinez@gmail.com';
+      const item = document.createElement('div');
+      item.className = 'flex justify-between items-center py-1 border-b border-primary/5 text-sm';
+      
+      const emailSpan = document.createElement('span');
+      emailSpan.className = 'font-mono text-on-surface';
+      emailSpan.innerText = email;
+      
+      item.appendChild(emailSpan);
+      
+      if (!isOwner) {
+        const removeBtn = document.createElement('button');
+        removeBtn.type = 'button';
+        removeBtn.className = 'text-red-600 hover:text-red-800 text-xs uppercase font-label-caps';
+        removeBtn.innerText = 'Eliminar';
+        removeBtn.onclick = () => {
+          removeAuthorizedEmail(email);
+        };
+        item.appendChild(removeBtn);
+      } else {
+        const label = document.createElement('span');
+        label.className = 'text-[9px] bg-primary/10 text-primary px-1.5 py-0.5 uppercase font-label-caps';
+        label.innerText = 'Propietario';
+        item.appendChild(label);
+      }
+      
+      container.appendChild(item);
+    });
+  }
+
+  function addEmailFromDrawer() {
+    const input = document.getElementById('input-new-email');
+    const email = input.value.trim().toLowerCase();
+    
+    if (!email) return;
+    if (!email.includes('@')) {
+      alert('Por favor ingrese un correo electrónico válido.');
+      return;
+    }
+    
+    const emails = getAuthorizedEmails();
+    if (emails.map(e => e.toLowerCase()).includes(email)) {
+      alert('Este correo electrónico ya está autorizado.');
+      return;
+    }
+    
+    emails.push(email);
+    localStorage.setItem('authorized_emails', JSON.stringify(emails));
+    input.value = '';
+    renderAuthorizedEmailsList();
+  }
+
+  function removeAuthorizedEmail(email) {
+    if (email.toLowerCase() === 'mgregoriomartinez@gmail.com') return;
+    
+    let emails = getAuthorizedEmails();
+    emails = emails.filter(e => e.toLowerCase() !== email.toLowerCase());
+    localStorage.setItem('authorized_emails', JSON.stringify(emails));
+    renderAuthorizedEmailsList();
+  }
+
+  function saveAdminData() {
+    const newSecret = document.getElementById('input-drawer-totpSecret').value.trim().toUpperCase();
+    if (newSecret && newSecret.length === 16) {
+      localStorage.setItem('totp_secret', newSecret);
+    }
+
+    const flipbookVal = document.getElementById('input-drawer-flipbookUrl').value.trim();
+    const parsedFlipbookUrl = parseFlipbookUrl(flipbookVal);
+    localStorage.setItem('flipbook_url_raw', flipbookVal);
+    localStorage.setItem('flipbook_url', parsedFlipbookUrl);
+
+    const data = {
+      totpSecret: newSecret || getTotpSecret(),
+      flipbookUrlRaw: flipbookVal,
+      flipbookUrl: parsedFlipbookUrl,
+      headerTitle: document.getElementById('input-headerTitle').value,
+      heroCoverImg: document.getElementById('input-heroCoverImg').value,
+      heroAuthor: document.getElementById('input-heroAuthor').value,
+      heroTitle: document.getElementById('input-heroTitle').value,
+      heroDescription: document.getElementById('input-heroDescription').value,
+      quoteText: document.getElementById('input-quoteText').value,
+      synopsisP1: document.getElementById('input-synopsisP1').value,
+      synopsisP2: document.getElementById('input-synopsisP2').value,
+      proposalTitle: document.getElementById('input-proposalTitle').value,
+      
+      item1Title: document.getElementById('input-item1Title').value,
+      item1Desc: document.getElementById('input-item1Desc').value,
+      item2Title: document.getElementById('input-item2Title').value,
+      item2Desc: document.getElementById('input-item2Desc').value,
+      item3Title: document.getElementById('input-item3Title').value,
+      item3Desc: document.getElementById('input-item3Desc').value,
+      item4Title: document.getElementById('input-item4Title').value,
+      item4Desc: document.getElementById('input-item4Desc').value,
+      
+      mockupImg1: document.getElementById('input-mockupImg1').value,
+      mockupImg2: document.getElementById('input-mockupImg2').value,
+      mockupImg3: document.getElementById('input-mockupImg3').value,
+      mockupImg4: document.getElementById('input-mockupImg4').value,
+      mockupImg5: document.getElementById('input-mockupImg5').value,
+      mockupImg6: document.getElementById('input-mockupImg6').value,
+      
+      footerTitle: document.getElementById('input-footerTitle').value
+    };
+
+    localStorage.setItem('book_presentation_data', JSON.stringify(data));
+    applyPageData();
+    initFlipbook();
+    toggleAdminPanel();
+  }
+
+  function handleImageUpload(event, targetInputId) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById(targetInputId).value = e.target.result;
+    };
+    reader.readAsDataURL(file);
+  }
+
+  function resetDefaults() {
+    if (confirm("¿Está seguro de que desea restablecer todos los textos e imágenes originales?")) {
+      localStorage.removeItem('book_presentation_data');
+      localStorage.removeItem('totp_secret');
+      localStorage.removeItem('flipbook_url');
+      localStorage.removeItem('flipbook_url_raw');
+      sessionStorage.clear();
+      window.location.reload();
+    }
+  }
+
+  function downloadHTML() {
+    applyPageData();
+    
+    const drawer = document.getElementById('admin-drawer');
+    const configModal = document.getElementById('config-modal');
+    const loginModal = document.getElementById('login-modal');
+    
+    drawer.classList.add('hidden');
+    drawer.classList.remove('flex');
+    configModal.classList.add('hidden');
+    configModal.classList.remove('flex');
+    loginModal.classList.add('hidden');
+    loginModal.classList.remove('flex');
+
+    const pageHtml = "<!DOCTYPE html>\n" + document.documentElement.outerHTML;
+    const blob = new Blob([pageHtml], { type: 'text/html;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    
+    const formattedTitle = document.getElementById('hero-title').innerText.toLowerCase().replace(/[^a-z0-9]+/g, '_');
+    a.download = `presentacion_${formattedTitle || 'libro'}.html`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    applyPageData();
+    initFlipbook();
+    updateAuthState();
+  });
+</script>
+<section class="bg-surface py-section-gap" id="vistas">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-primary mb-4">Vistas de Maquetación</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                        Explora cómo se adapta el diseño a los diferentes formatos de producción, tanto en cubierta como en páginas interiores.
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-lowest ghost-border overflow-hidden">
+<img id="mockup-img-1" alt="Mockup Portada" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR453jq6oNJfSmcrnfSJZoQ00XyHyLR-wa_2KUziE_PefFX1BhWxHxcTu3CKY6-sDrGZv8QXA-gk4Vrm7DkFAUo2fxxnUFrQj5qQcjiliCN4TSGhRrM71EaSQoaNl0aImvfq_V6kfEnRf_84dY3t1Zw4SzQjqI1Ki1SUcHSUHopIBHuF6b4gsPwMn7R4eViphrPx3bWqpOXH0Vq3r0-s7ryv3sT7DznsZFVf8REydopR-78TD3REcuMt1j2-xi-jSx8g">
+</div>
+<div class="bg-surface-container-lowest ghost-border overflow-hidden">
+<img id="mockup-img-2" alt="Mockup Interior Abierto" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqB2zq9ndL_OAVtDbpBfMPTV7yFW-EHgLFq6ZS2zeKmNnNqXldqvVyt5BdaG2MLBG_5_gNh1XR40o_lCtLPqbEhq5nTrMB5iCHkYsswQuX2qGcHf99sZLQU4fDoG6ppTU7e4gRz2OLac7Xs0-dbVLe8DSKPLRauKQc42Xm0JSK_m7s1DTCnf7K4-jpBqr2hWkvX8gH_2KazrCxDA5n0VYqDWCaqwHsJCQ03Ctdqjw6_uGfI_M3f5_qV6zwK9j3HV5kbA">
+</div>
+<div class="bg-surface-container-lowest ghost-border overflow-hidden md:col-span-2">
+<img id="mockup-img-3" alt="Mockup Páginas Interiores" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG8FFTLHEoRLonQCG7Z_swiJ0-gakr62-fqFhFpaHx4JeLCSsDJPqR6NVReGcqiPFjvVLQnJgm0-4WdyNixb-v9NtlNFvDsfa4jL1TR7nFLbUgmWcpMRvLhZ_itUdDNBYCOLL2jraHvKUoLiP3mvlcN49DVvU9bW9Z8_0X5PbBdY-I8fY90RpzROn97C8uV7WPrrnx0uibGl9ZyNX2owY7VdZO2aw4Qm_sqsYVnkOgk-PtW1h6fv48rPMoqewGnDOHwA">
+</div>
+<div class="bg-surface-container-lowest ghost-border overflow-hidden">
+<img id="mockup-img-4" alt="Mockup Lectura" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFs8rj5EDhU552gUHOjV4vpF8JhSQRUF7lxYhTSR7JRfiSuQ6OQUSNGjWfril73LpG23nO0c6kGq44J_lxn4Npm7yP7PsaQUoBy7ocB0NDU_951FgD9pPChK9JCut-ZOdabOeJ3pDh7hfFe5w1MIPO9Pbxbj5XDZe_qf3GwUYAuDTtC8sDq9DeGMJit6WwHc7hMgqLY1rIp3Uo2ZqXAA6YrUDsbIw30rSM6cBqG3ZuJWxr1aYEAeTo6fnHUHot5uCs9g">
+</div>
+<div class="bg-surface-container-lowest ghost-border overflow-hidden">
+<img id="mockup-img-5" alt="Mockup Inicio de Capítulo" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU82NHdbFxpNkO1j72BUFWHj8a8neMYlMh_K4-TGLiUrkcaS97StjP7jepKRVQHu1U8eYc0fLToqz-n-FWsgn8OqcPf1y-6kMjZJfLzhVGTcl1T6-XAVFx5uE0Bu-X6LmCctJIp8CLAH-RvyVOJfigqCBSrhWUe2OYctpuQjEVE4g-BgfZM8cMFjlHr5wyCE5BEx4zit20fC-Krq_qQa2FLAZQ-w96GW5jju-YxMmZiaf0DTKeO6SPAEBRe4IHsBpt_A">
+</div>
+<div class="bg-surface-container-lowest ghost-border overflow-hidden">
+<img id="mockup-img-6" alt="Mockup Apilados" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtDLZbhsCsf5lqbdLkAmQkvQ2k5r0ecMAO88lrMRXDUwtVnyNaxfuDMQr4a--EZYFhRowRxpbFqLzGYUzSIW4CL7a-flopZDeBsDryyTiUC9f4W9I7sUoX9SBTStul6gy5NU7CaP_HV_dMsOlyh0oNojCBG5uLQbEQ3SSHQ41IkgjcC8x7NSLPrbECGEuOj_AcHmIqsZG3mveJm08RHVwbJ9IOv3YeXh4yOjkgPfd5gSYZSij9OxU6tf9n9OXGY99Nug">
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-highest border-t border-outline-variant opacity-100 mt-section-gap">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 gap-gutter">
+<div id="footer-title" class="font-headline-md text-headline-md text-primary opacity-80 hover:opacity-100 transition-opacity">
+                Propuesta de Diseño Editorial
+            </div>
+<div class="font-body-md text-body-md text-on-surface-variant">
+                Presentación confidencial para revisión.
+            </div>
+</div>
+</footer>
+
+
+</body></html>
